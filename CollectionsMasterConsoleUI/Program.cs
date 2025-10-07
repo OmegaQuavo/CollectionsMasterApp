@@ -37,9 +37,15 @@ namespace CollectionsMasterConsoleUI
             Array.Reverse(numbers);
 
             Console.WriteLine("All Numbers Reversed:");
-
+            foreach (var num in numbers)
+            {
+                Console.WriteLine(num);
+            }
             Console.WriteLine("---------REVERSE CUSTOM------------");
-
+            foreach (var num in numbers)
+            {
+                Console.WriteLine(num);
+            }
             Console.WriteLine("-------------------");
 
             //TODO: Create a method that will set numbers that are a multiple of 3 to zero then print to the console all numbers
@@ -188,6 +194,12 @@ namespace CollectionsMasterConsoleUI
                 start++;
                 end--;
             }
+            Console.WriteLine("Reversed array:");
+            foreach (var num in array)
+            {
+                Console.Write($"{num} ");
+            }
+            Console.WriteLine();
         }
 
         /// <summary>
